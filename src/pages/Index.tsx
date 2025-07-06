@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Gamepad2, Video, MapPin, Phone, Globe, Flag } from "lucide-react";
-import sunilAvatar from "@/assets/sunil-avatar.png";
+import { Gamepad2, Video, MapPin, Phone, Globe, Flag, Hexagon, PhilippinePeso, PiggyBank, FileCode2, PersonStanding, CircleCheck } from "lucide-react";
+import ankitAvatar from "@/assets/ankit-avatar.png";
 
 const Index = () => {
   return (
@@ -14,9 +14,9 @@ const Index = () => {
           <div className="flex justify-center md:justify-start">
             <div className="portfolio-avatar">
               <img 
-                src={sunilAvatar} 
-                alt="Sunil Kumar Avatar" 
-                className="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover"
+                src={ankitAvatar} 
+                alt="Ankit Negi Avatar" 
+                className="w-60 h-68 md:w-64 md:h-65 rounded-2xl object-cover"
               />
             </div>
           </div>
@@ -24,7 +24,7 @@ const Index = () => {
           {/* Bio */}
           <div className="portfolio-card space-y-4 text-center md:text-left">
             <p className="text-lg leading-relaxed text-foreground">
-              My name is Sunil Kumar, self-taught logo/brand designer with 4+ years of experience creating modern, clean, and minimal brands that make a lasting impression.
+              My name is Ankit Negi, a full stack developer with 8+ years of experience building high-performance, scalable, and modern web applications. I specialize in crafting seamless frontends with Vue.js & React, and robust backends with Node.js & Express. My work spans across e-commerce, healthcare, and enterprise platforms with a focus on performance, maintainability, and clean architecture.
             </p>
             
             {/* Interests */}
@@ -37,7 +37,7 @@ const Index = () => {
                 </Badge>
                 <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
                   <Video className="w-4 h-4" />
-                  Film Making
+                  Tech Youtube
                 </Badge>
                 <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
                   <MapPin className="w-4 h-4" />
@@ -51,53 +51,158 @@ const Index = () => {
         {/* Experience & Education Grid */}
         <div className="grid lg:grid-cols-3 gap-6">
           
-          {/* Freelancer Experience */}
+          {/* Cognizant Experience */}
           <Card className="portfolio-card space-y-4">
             <div className="flex justify-between items-start">
-              <h2 className="text-xl font-semibold text-foreground">Freelancer</h2>
-              <Badge variant="outline" className="text-sm">2021 - now</Badge>
+              <h2 className="text-xl font-semibold text-foreground">CTS – Senior Associate</h2>
+              <Badge variant="outline" className="text-sm">Feb 2024 – Present</Badge>
             </div>
-            <p className="text-muted-foreground">Logo/Brand Designer</p>
+            <p className="text-muted-foreground">Full stack Developer</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                Worked on diverse logo and brand identity projects.
+                Optimized high-traffic UI application for  an ecommerce giant reducing load times by 25%.
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                Collaborated with clients from multiple countries.
+                Creation of reusable UI components, plugins improving development speed by 30%.
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                Developed a versatile design skill set.
+                Worked on deployment lifecycle using Docker, Kubernetes, and AWS Infrastructure.
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
                 Adapted to unique challenges and requirements.
               </li>
             </ul>
+             <div className="space-y-2">
+              <h4 className="text-sm font-medium text-foreground">Tech stack:</h4>
+              <p className="text-sm text-muted-foreground">Javascript, Vue 2, Node JS, Mongo DB, AWS - EC2, SQS, Docker, Kubernetes, Github Actions,</p>
+            </div>
           </Card>
 
-          {/* Meetzed Experience */}
+          {/* TCS Experience */}
           <Card className="portfolio-card space-y-4">
             <div className="flex justify-between items-start">
-              <h2 className="text-xl font-semibold text-foreground">Meetzed</h2>
-              <Badge variant="outline" className="text-sm">2020 - 2021</Badge>
+              <h2 className="text-xl font-semibold text-foreground">TCS – Assistant Consultant</h2>
+              <Badge variant="outline" className="text-sm">Dec 2021 – Feb 2024</Badge>
             </div>
-            <p className="text-muted-foreground">Graphic Designer</p>
+            <p className="text-muted-foreground">Frontend UI Developer</p>
             <ul className="space-y-2 text-sm text-muted-foreground mb-4">
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                Collaboration: Supported Lead Designer on projects.
+                Migrated AppleCare Portal from Vue 2 to Vue 3.
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                Branding: Crafted unique brand identities.
+                Integrated Playwright and Vitest achieving 90% test coverage
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Worked on performance improvements for high-traffic react application.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Lead the team of 5 developers to deliver high-quality code and features.
               </li>
             </ul>
             <div className="space-y-2">
-              <h4 className="text-sm font-medium text-foreground">Tools:</h4>
-              <p className="text-sm text-muted-foreground">Used Illustrator, Photoshop & InDesign.</p>
+              <h4 className="text-sm font-medium text-foreground">Tech stack:</h4>
+              <p className="text-sm text-muted-foreground">Vue 2, Vue3, React, Apple Design System, Vitest, Playwright</p>
+            </div>
+          </Card>
+
+           {/* LTI Mindtree Experience */}
+          <Card className="portfolio-card space-y-4">
+            <div className="flex justify-between items-start">
+              <h2 className="text-xl font-semibold text-foreground">LTI Mindtree – Module Lead</h2>
+              <Badge variant="outline" className="text-sm">Aug 2020 – Nov 2021</Badge>
+            </div>
+            <p className="text-muted-foreground">MERN Developer</p>
+            <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Built React dashboards for Cisco’s network monitoring platform.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Developed REST APIs for real-time fault analysis using Node.js & MongoDB.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Ensured authentication and compliance.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Lead the team of 5 developers to deliver high-quality code and features.
+              </li>
+            </ul>
+            <div className="space-y-2">
+              <h4 className="text-sm font-medium text-foreground">Tech stack:</h4>
+              <p className="text-sm text-muted-foreground">React, Node JS, Express, Mongo DB</p>
+            </div>
+          </Card>
+
+          {/* Infostride Experience */}
+          <Card className="portfolio-card space-y-4">
+            <div className="flex justify-between items-start">
+              <h2 className="text-xl font-semibold text-foreground">Infostride Technologies – Software Engineer</h2>
+              <Badge variant="outline" className="text-sm">Jun 2019 – Aug 2020</Badge>
+            </div>
+            <p className="text-muted-foreground">Full Stack Developer</p>
+            <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Built Vue.js & React apps for healthcare and e-commerce domain projects
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Integrated eBay & Walmart APIs for marketplace automation.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Worked on nuxt for server-side rendering and performance optimization.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Worked with database technologies like MongoDB and MySQL.
+              </li>
+            </ul>
+            <div className="space-y-2">
+              <h4 className="text-sm font-medium text-foreground">Tech stack:</h4>
+              <p className="text-sm text-muted-foreground">PHP - Laravel, Vue JS (Nuxt), React JS, Node JS, Express JS, MySQL, Mongo DB</p>
+            </div>
+          </Card>
+
+          {/* Rubico Experience */}
+          <Card className="portfolio-card space-y-4">
+            <div className="flex justify-between items-start">
+              <h2 className="text-xl font-semibold text-foreground">Rubico – Associate Software Developer</h2>
+              <Badge variant="outline" className="text-sm">Oct 2017 – May 2019</Badge>
+            </div>
+            <p className="text-muted-foreground">Full stack Developer</p>
+            <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Developed responsive SaaS and healthcare dashboards using Vue.js and Laravel.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+               Created reusable UI components and improved app performance by optimizing Vue.js code.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Integrated Stripe payment gateway and Passport authentication for secure online transactions.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                Migrated legacy PHP based frontend to a modern Vue.js single-page application, improving speed and user engagement by 30%
+              </li>
+            </ul>
+            <div className="space-y-2">
+              <h4 className="text-sm font-medium text-foreground">Tech stack:</h4>
+              <p className="text-sm text-muted-foreground">PHP Laravel, Vue 2, MySQL, Jenkins</p>
             </div>
           </Card>
 
@@ -107,29 +212,29 @@ const Index = () => {
             <div className="space-y-4">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-medium text-foreground">High School</h3>
-                  <p className="text-sm text-muted-foreground">Humanities</p>
-                  <p className="text-sm text-muted-foreground">Delhi Cantonment, India</p>
+                  <h3 className="font-medium text-foreground">B.tech in Computer Science</h3>
+                  <p className="text-sm text-muted-foreground">Uttarkhand Technical University</p>
+                  <p className="text-sm text-muted-foreground">Dehradun, Uttarakhand, India</p>
                 </div>
-                <Badge variant="outline" className="text-sm">2017</Badge>
+                <Badge variant="outline" className="text-sm">2013</Badge>
               </div>
               
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-medium text-foreground">Diploma</h3>
-                  <p className="text-sm text-muted-foreground">Animation and Graphic Design</p>
-                  <p className="text-sm text-muted-foreground">Delhi, India</p>
+                  <h3 className="font-medium text-foreground">Intermediate - 12th</h3>
+                  <p className="text-sm text-muted-foreground">CBSE, Dehradun Region</p>
+                  <p className="text-sm text-muted-foreground">Dehradun, Uttarakhand, India</p>
                 </div>
-                <Badge variant="outline" className="text-sm">2017-18</Badge>
+                <Badge variant="outline" className="text-sm">2009</Badge>
               </div>
               
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-medium text-foreground">Graduation</h3>
-                  <p className="text-sm text-muted-foreground">Bachelor of Fine Arts</p>
-                  <p className="text-sm text-muted-foreground">IGNOU Delhi, India</p>
+                  <h3 className="font-medium text-foreground">High School - 10th</h3>
+                  <p className="text-sm text-muted-foreground">CBSE, Dehradun Region</p>
+                  <p className="text-sm text-muted-foreground">Dehradun, Uttarakhand, India</p>
                 </div>
-                <Badge variant="outline" className="text-sm">2017-21</Badge>
+                <Badge variant="outline" className="text-sm">2007</Badge>
               </div>
             </div>
           </Card>
@@ -140,52 +245,62 @@ const Index = () => {
           
           {/* Design Tools */}
           <Card className="portfolio-card">
-            <h3 className="text-lg font-semibold text-foreground mb-4">Design Tools</h3>
-            <div className="flex gap-3">
-              <div className="tool-icon bg-orange-600/10 text-orange-600">
-                <span className="text-sm font-bold">Ai</span>
-              </div>
-              <div className="tool-icon bg-blue-600/10 text-blue-600">
-                <span className="text-sm font-bold">Ps</span>
-              </div>
-              <div className="tool-icon bg-pink-600/10 text-pink-600">
-                <span className="text-sm font-bold">Id</span>
-              </div>
-              <div className="tool-icon bg-purple-600/10 text-purple-600">
-                <span className="text-sm font-bold">Xd</span>
-              </div>
+            <h3 className="text-lg font-semibold text-foreground mb-4">Frontend Skills</h3>
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <FileCode2 className="w-4 h-4"/>
+                  HTML/CSS/Javascript
+                </Badge>
+                <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <PhilippinePeso className="w-4 h-4"/>
+                  Vue JS (Nuxt, Vue 2, Vue 3)
+                </Badge>
+                <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <PersonStanding className="w-4 h-4" />
+                  React JS (Core & Next JS)
+                </Badge>
             </div>
           </Card>
 
-          {/* Editing Tools */}
+          {/* Backend Skill */}
           <Card className="portfolio-card">
-            <h3 className="text-lg font-semibold text-foreground mb-4">Editing Tools</h3>
-            <div className="flex gap-3">
-              <div className="tool-icon bg-purple-600/10 text-purple-600">
-                <span className="text-sm font-bold">Ae</span>
-              </div>
-              <div className="tool-icon bg-blue-600/10 text-blue-600">
-                <span className="text-sm font-bold">Pr</span>
-              </div>
-              <div className="tool-icon bg-gray-600/10 text-gray-300">
-                <span className="text-xs font-bold">DV</span>
-              </div>
+            <h3 className="text-lg font-semibold text-foreground mb-4">Backend Skills</h3>
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <Hexagon className="w-4 h-4"/>
+                  Node JS (Express JS)
+                </Badge>
+                <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <PiggyBank className="w-4 h-4"/>
+                  PHP (Laravel)
+                </Badge>
+                <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <MapPin className="w-4 h-4" />
+                  Drupal/Wordpress
+                </Badge>
             </div>
           </Card>
 
           {/* Languages */}
           <Card className="portfolio-card">
-            <h3 className="text-lg font-semibold text-foreground mb-4">Languages</h3>
-            <div className="flex gap-3">
-              <div className="w-8 h-8 rounded overflow-hidden">
-                <Flag className="w-full h-full text-orange-500" />
-              </div>
-              <div className="w-8 h-8 rounded overflow-hidden">
-                <Flag className="w-full h-full text-blue-600" />
-              </div>
-              <div className="w-8 h-8 rounded overflow-hidden">
-                <Flag className="w-full h-full text-red-600" />
-              </div>
+            <h3 className="text-lg font-semibold text-foreground mb-4">Full Stack Skills</h3>
+           <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <CircleCheck className="w-4 h-4"/>
+                  Github, Github Actions, Jenkins
+                </Badge>
+                <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <CircleCheck className="w-4 h-4"/>
+                  Docker & Kubernetes
+                </Badge>
+                <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <CircleCheck className="w-4 h-4" />
+                  AWS (EC2, SQS, Lambda)
+                </Badge>
+                  <Badge variant="secondary" className="flex items-center gap-2 px-3 py-1">
+                  <CircleCheck className="w-4 h-4" />
+                  Playwright, Vitest, Postman
+                </Badge>
             </div>
           </Card>
 
@@ -193,10 +308,10 @@ const Index = () => {
           <Card className="portfolio-card">
             <h3 className="text-lg font-semibold text-foreground mb-4">Portfolio</h3>
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary" className="text-xs">Bento</Badge>
-              <Badge variant="secondary" className="text-xs">Behance</Badge>
-              <Badge variant="secondary" className="text-xs">Instagram</Badge>
-              <Badge variant="secondary" className="text-xs">YouTube</Badge>
+              <Badge variant="secondary" className="text-xs">Williams Sonoma</Badge>
+              <Badge variant="secondary" className="text-xs">Apple Enterprise</Badge>
+              <Badge variant="secondary" className="text-xs">Cisco Bits Automation</Badge>
+              <Badge variant="secondary" className="text-xs"></Badge>
               <Badge variant="secondary" className="text-xs">Dribbble</Badge>
             </div>
           </Card>
@@ -207,22 +322,22 @@ const Index = () => {
           <div className="flex flex-wrap gap-6 justify-center md:justify-between items-center text-sm">
             <div className="flex items-center gap-2">
               <span className="text-2xl">🎂</span>
-              <span className="text-muted-foreground">26 years</span>
+              <span className="text-muted-foreground">21 April</span>
             </div>
             
             <div className="flex items-center gap-2">
               <Globe className="w-4 h-4 text-muted-foreground" />
-              <span className="text-muted-foreground">iamsunilfreelancer.com</span>
+              <a href="https://anknegi.netlify.app/" className="text-muted-foreground">https://anknegi.netlify.app/</a>
             </div>
             
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-muted-foreground" />
-              <span className="text-muted-foreground">+91 9899052055</span>
+              <span className="text-muted-foreground">Login to view</span>
             </div>
             
             <div className="flex items-center gap-2">
               <Flag className="w-4 h-4 text-orange-500" />
-              <span className="text-muted-foreground">India</span>
+              <span className="text-muted-foreground">New Delhi- India</span>
             </div>
           </div>
         </Card>
