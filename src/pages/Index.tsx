@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import ankitAvatar from "@/assets/ankit-avatar.png";
@@ -11,16 +11,51 @@ import {
   skills,
   portfolio,
 } from "@/content/portfolioContent";
+// Popup component
+const WelcomePopup = ({ onClose }: { onClose: () => void }) => (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80">
+    <div className="relative max-w-xl w-full">
+      <button
+        className="absolute top-2 right-2 z-10 text-white bg-black/60 rounded-full px-2 py-0.5 text-2xl hover:bg-black/80"
+        onClick={onClose}
+        aria-label="Close"
+        style={{ lineHeight: 1 }}
+      >
+        ×
+      </button>
+      <div className="aspect-video">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&rel=0&showinfo=0&modestbranding=1&controls=1"
+          title="Welcome Video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          className="w-full h-full rounded-lg border-0"
+          style={{ background: "black" }}
+        />
+      </div>
+    </div>
+  </div>
+);
 
 const Index = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
+      {showPopup && <WelcomePopup onClose={() => setShowPopup(false)} />}
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Hero Section */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Avatar */}
           <div className="flex justify-center md:justify-start">
-            <div className="portfolio-avatar">
+            <div
+              className="portfolio-avatar cursor-pointer"
+              onClick={() => setShowPopup(true)}
+              title="Click to watch welcome video"
+            >
               <img
                 src={ankitAvatar}
                 alt="Ankit Negi Avatar"
