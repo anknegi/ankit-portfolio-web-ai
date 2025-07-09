@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import {
@@ -16,98 +17,14 @@ import {
 } from "lucide-react";
 import ankitAvatar from "@/assets/ankit-avatar.png";
 import ankitLogo from "@/assets/ankit-logo.png";
+import { Link } from "react-router-dom";
 
 const Index = () => {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="max-w-6xl mx-auto space-y-8">
-        {/* Nav Section */}
-        <nav className="border-gray-200 dark:bg-gray-900">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a
-              href="https://anknegi.netlify.app/"
-              className="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              <img
-                src={ankitLogo}
-                className="bg-white w-40 h-35 md:w-35 md:h-55 rounded-3xl object-cover"
-                alt="Ankit Logo"
-              />
-            </a>
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-            <div
-              className="hidden w-full md:block md:w-auto"
-              id="navbar-default"
-            >
-              <ul className="font-medium flex flex-col p-4 md:p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                    aria-current="page"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >
-                    Pre interview
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >
-                    Downloads
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
         {/* Hero Section */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Avatar */}
@@ -551,36 +468,6 @@ const Index = () => {
             </div>
           </Card>
         </div>
-
-        {/* Details Footer */}
-        <Card className="portfolio-card">
-          <div className="flex flex-wrap gap-6 justify-center md:justify-between items-center text-sm">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">🎂</span>
-              <span className="text-muted-foreground">21 April</span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Globe className="w-4 h-4 text-muted-foreground" />
-              <a
-                href="https://anknegi.netlify.app/"
-                className="text-muted-foreground"
-              >
-                https://anknegi.netlify.app/
-              </a>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-muted-foreground" />
-              <span className="text-muted-foreground">Login to view</span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Flag className="w-4 h-4 text-orange-500" />
-              <span className="text-muted-foreground">New Delhi- India</span>
-            </div>
-          </div>
-        </Card>
       </div>
     </div>
   );
