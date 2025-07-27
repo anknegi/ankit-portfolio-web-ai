@@ -1,6 +1,8 @@
+import { url } from "inspector";
 import {
-  Gamepad2,
-  Video,
+  Linkedin,
+  Youtube,
+  Github,
   MapPin,
   Hexagon,
   PhilippinePeso,
@@ -18,10 +20,10 @@ work spans across e-commerce, healthcare, and enterprise platforms
 with a focus on performance, maintainability, and clean
 architecture.`;
 
-export const interests = [
-  { icon: <Gamepad2 className="w-4 h-4" />, label: "Gaming" },
-  { icon: <Video className="w-4 h-4" />, label: "Tech Youtube" },
-  { icon: <MapPin className="w-4 h-4" />, label: "Traveling" },
+export const connectOptions = [
+  { icon: <Linkedin className="w-4 h-4" />, label: "LinkedIn", url: "https://www.linkedin.com/in/anknegi" },
+  { icon: <Youtube className="w-4 h-4" />, label: "Youtube", url: "https://www.youtube.com/@ankitnegi" },
+  { icon: <Github className="w-4 h-4" />, label: "Github ", url: "https://www.github.com/anknegi" }
 ];
 
 export const experiences = [

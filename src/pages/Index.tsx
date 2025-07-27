@@ -5,7 +5,7 @@ import ankitAvatar from "@/assets/ankit-avatar.png";
 import { Link } from "react-router-dom";
 import {
   bioText,
-  interests,
+  connectOptions,
   experiences,
   education,
   skills,
@@ -24,17 +24,7 @@ const WelcomePopup = ({ onClose }: { onClose: () => void }) => (
         ×
       </button>
       <div className="aspect-video">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&rel=0&showinfo=0&modestbranding=1&controls=1"
-          title="Welcome Video"
-          frameBorder="0"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-          className="w-full h-full rounded-lg border-0"
-          style={{ background: "black" }}
-        />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VhyaKEJiVtw?si=egH169fti7vaNE-3&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -70,19 +60,21 @@ const Index = () => {
               {bioText}
             </p>
 
-            {/* Interests */}
+            {/* connect */}
             <div className="space-y-3">
-              <h3 className="text-lg font-medium text-foreground">Interests</h3>
+              <h3 className="text-lg font-medium text-foreground">Connect with me</h3>
               <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                {interests.map((interest, idx) => (
+                {connectOptions.map((connect, idx) => (
+                   <a href={connect.url} target="_new" key={idx} rel="noopener noreferrer">
                   <Badge
-                    key={idx}
                     variant="secondary"
                     className="flex items-center gap-2 px-3 py-1"
                   >
-                    {interest.icon}
-                    {interest.label}
+                   
+                    {connect.icon}
+                    {connect.label}
                   </Badge>
+                  </a>
                 ))}
               </div>
             </div>
